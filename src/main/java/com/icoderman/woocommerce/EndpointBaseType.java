@@ -18,6 +18,8 @@ public enum EndpointBaseType {
     REPORTS_TOP_SELLERS("reports/top_sellers"),
     SHIPPING_METHODS("shipping_methods"),
     SHIPPING_ZONES("shipping/zones"),
+    SHIPPING_ZONES_LOCATIONS("shipping/zones/%d/locations"),
+    SHIPPING_ZONES_METHODS("shipping/zones/%d/methods"),
     TAXES("taxes"),
     TAXES_CLASSES("taxes/classes"),
     WEBHOOKS("webhooks");

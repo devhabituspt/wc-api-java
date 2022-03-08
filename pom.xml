@@ -124,6 +124,7 @@
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
                 <configuration>
+                    <skip>true</skip>
                     <useAgent>true</useAgent>
                 </configuration>
                 <executions>
