@@ -7,4 +7,5 @@ package com.icoderman.woocommerce;
 public enum HttpMethod {
 
     GET, POST, PUT, DELETE
+    
 }

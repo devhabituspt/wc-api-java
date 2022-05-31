@@ -2,6 +2,7 @@ package com.icoderman.woocommerce;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -34,7 +35,8 @@ public class DefaultHttpClient implements HttpClient {
 
     public DefaultHttpClient() {
         this.httpClient = HttpClientBuilder.create().build();
-        this.mapper = new ObjectMapper();
+        this.mapper = new ObjectMapper()
+                .registerModule(new JavaTimeModule());
     }
 
     @Override

@@ -6,6 +6,8 @@ import com.icoderman.woocommerce.EndpointBaseType;
 import com.icoderman.woocommerce.WooCommerce;
 import com.icoderman.woocommerce.WooCommerceAPI;
 import com.icoderman.woocommerce.oauth.OAuthConfig;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -37,6 +39,7 @@ public class WooCommerceClientTest {
         productInfo.put("type", "simple");
         productInfo.put("regular_price", "21.99");
         productInfo.put("description", "Pellentesque habitant morbi tristique senectus et netus");
+        productInfo.put("date_modified", LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS));
         Map product = wooCommerce.create(EndpointBaseType.PRODUCTS.getValue(), productInfo);
         Assert.assertNotNull(product);
     }

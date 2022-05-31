@@ -4,6 +4,7 @@ package com.icoderman.woocommerce;
  * Enum that represents WooCommerce API versions
  */
 public enum ApiVersionType {
+    
     V1("v1"),
     V2("v2"),
     V3("v3");

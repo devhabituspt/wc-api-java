@@ -4,12 +4,13 @@ package com.icoderman.woocommerce.oauth;
  * Enum with special symbols and their encoded representations
  */
 public enum SpecialSymbol {
-
+    
     AMP("&", "%26"),
     EQUAL("=", "%3D"),
     PLUS("+", "%2B"),
     STAR("*", "%2A"),
-    TILDE("~", "%7E");
+    TILDE("~", "%7E"),
+    COLON(":", "%3A");
 
     private String plain;
     private String encoded;

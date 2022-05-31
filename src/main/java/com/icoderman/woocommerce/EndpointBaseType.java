@@ -8,6 +8,7 @@ public enum EndpointBaseType {
     COUPONS("coupons"),
     CUSTOMERS("customers"),
     ORDERS("orders"),
+    REFUNDS("orders/%s/refunds"),
     PRODUCTS("products"),
     PRODUCTS_ATTRIBUTES("products/attributes"),
     PRODUCTS_CATEGORIES("products/categories"),
